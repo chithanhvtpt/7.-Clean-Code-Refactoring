@@ -1,9 +1,9 @@
 <?php
-include_once '../Square.php';
+include_once '../src/Square.php';
 
 use PHPUnit\Framework\TestCase;
 
-class AreaTest extends TestCase
+class SquareTest extends TestCase
 {
     public function testGetArea()
     {
@@ -11,4 +11,5 @@ class AreaTest extends TestCase
         $square = new Square(5,5);
         $result = $square->getArea();
         $this->assertEquals($result, $expected);
-    }}
+    }
+}
